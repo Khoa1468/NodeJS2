@@ -7,10 +7,10 @@ const port = 3000
 
 app.use(morgan('combined'))
 
-app.engine('handlebars', handlebars({
+app.engine('hbs', handlebars({
     extname: '.hbs'
 }))
-app.set('view engine', 'handlebars')
+app.set('view engine', 'hbs')
 app.set('views', path.join(__dirname, 'resources\\views'))
 // Use \\ for Windows, / for Mac
 console.log(`PATH: ${path.join(__dirname, 'resources\\views')}`)
