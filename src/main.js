@@ -26,6 +26,9 @@ app.get('/trang-chu', (req, res) => {
 app.get('/tin-tuc', (req, res) => {
     res.render('news')
 })
+app.get('/search', (rep, res) => {
+  res.render('search')
+})
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
