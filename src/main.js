@@ -3,6 +3,7 @@ const path = require("path");
 const morgan = require("morgan");
 const handlebars = require("express-handlebars");
 const app = express();
+const route = require("./routes/index.route");
 const port = 3000;
 
 app.use(express.static(path.join(__dirname, "public")));
@@ -20,18 +21,7 @@ app.set("views", path.join(__dirname, "resources\\views"));
 // Use \\ for Windows, / for Mac
 console.log(`PATH: ${path.join(__dirname, "resources\\views")}`);
 
-app.get("/", (req, res) => {
-  res.render("home");
-});
-app.get("/trang-chu", (req, res) => {
-  res.render("moi");
-});
-app.get("/tin-tuc", (req, res) => {
-  res.render("news");
-});
-app.get("/search", (rep, res) => {
-  res.render("search");
-});
+route(app);
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
