@@ -11,6 +11,10 @@ class SitesController{
     search(req, res){
         res.render("search");
     }
+    //[GET]/cup-dien
+    cup_dien(req, res){
+        res.render("cup-dien");
+    }
 }
 
 module.exports = new SitesController;
