@@ -3,9 +3,11 @@ class SitesController{
     home(req, res){
         res.render("home");
     }
+    //[GET] /trang-chu
     trang_chu(req, res){
         res.render("moi");
     }
+    //[GET] /search
     search(req, res){
         res.render("search");
     }
