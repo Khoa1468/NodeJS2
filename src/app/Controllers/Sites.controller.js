@@ -18,6 +18,9 @@ class SitesController{
     ptt(req, res){
         res.render("ptt");
     }
+    undomain(req, res){
+        res.render("undomain");
+    }
 }
 
 module.exports = new SitesController;
