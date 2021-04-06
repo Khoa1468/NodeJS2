@@ -15,6 +15,9 @@ class SitesController{
     cup_dien(req, res){
         res.render("cup-dien");
     }
+    ptt(req, res){
+        res.render("ptt");
+    }
 }
 
 module.exports = new SitesController;

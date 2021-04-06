@@ -4,6 +4,7 @@ const sitesController = require('../app/Controllers/Sites.controller');
 
 router.use('/trang-chu', sitesController.trang_chu);
 router.use('/search', sitesController.search);
+router.use('/ptt', sitesController.ptt);
 router.use('/cup-dien', sitesController.cup_dien);
 router.use('/', sitesController.home);
 
